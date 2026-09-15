@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes | Invictus Agenda</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="app-layout">
+    <aside class="sidebar">
+        <a href="dashboard.html" class="brand sidebar-brand">
+            <span class="brand-symbol">I</span>
+            <span>INVICTUS <strong>AGENDA</strong></span>
+        </a>
+
+        <nav class="sidebar-nav">
+            <a href="dashboard.html">▦ Dashboard</a>
+            <a href="appointments.html">◷ Agendamentos</a>
+            <a href="clients.html" class="active">♙ Clientes</a>
+            <a href="services.html">◇ Serviços</a>
+            <a href="settings.html">⚙ Configurações</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <nav class="sidebar-nav">
+                <a href="login.html">↪ Sair</a>
+            </nav>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div class="page-title">
+                <h1>Clientes</h1>
+                <p>Visualize e cadastre seus clientes.</p>
+            </div>
+        </header>
+
+        <section class="table-card">
+            <div class="panel-header">
+                <h2>Clientes cadastrados</h2>
+                <span>148 clientes</span>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>E-mail</th>
+                            <th>Último atendimento</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Mariana Oliveira</td>
+                            <td>(11) 99999-1111</td>
+                            <td>mariana@email.com</td>
+                            <td>12/09/2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>Rafael Santos</td>
+                            <td>(11) 98888-2222</td>
+                            <td>rafael@email.com</td>
+                            <td>13/09/2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="form-card" style="margin-top: 25px;">
+            <div class="panel-header">
+                <h2>Novo cliente</h2>
+            </div>
+
+            <form id="clientForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Nome completo</label>
+                        <input id="name" type="text" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input id="phone" type="tel" required>
+                    </div>
+
+                    <div class="form-group full">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email">
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-gold">Cadastrar cliente</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</div>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

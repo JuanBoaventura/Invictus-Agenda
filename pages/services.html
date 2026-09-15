@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços | Invictus Agenda</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="app-layout">
+    <aside class="sidebar">
+        <a href="dashboard.html" class="brand sidebar-brand">
+            <span class="brand-symbol">I</span>
+            <span>INVICTUS <strong>AGENDA</strong></span>
+        </a>
+
+        <nav class="sidebar-nav">
+            <a href="dashboard.html">▦ Dashboard</a>
+            <a href="appointments.html">◷ Agendamentos</a>
+            <a href="clients.html">♙ Clientes</a>
+            <a href="services.html" class="active">◇ Serviços</a>
+            <a href="settings.html">⚙ Configurações</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <nav class="sidebar-nav">
+                <a href="login.html">↪ Sair</a>
+            </nav>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div class="page-title">
+                <h1>Serviços</h1>
+                <p>Cadastre e gerencie os serviços oferecidos.</p>
+            </div>
+        </header>
+
+        <section class="table-card">
+            <div class="panel-header">
+                <h2>Serviços disponíveis</h2>
+                <span>12 serviços</span>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Serviço</th>
+                            <th>Duração</th>
+                            <th>Valor</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Corte masculino</td>
+                            <td>40 minutos</td>
+                            <td>R$ 45,00</td>
+                            <td><span class="status">Ativo</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Corte feminino</td>
+                            <td>60 minutos</td>
+                            <td>R$ 80,00</td>
+                            <td><span class="status">Ativo</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Manicure</td>
+                            <td>45 minutos</td>
+                            <td>R$ 35,00</td>
+                            <td><span class="status">Ativo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="form-card" style="margin-top: 25px;">
+            <div class="panel-header">
+                <h2>Novo serviço</h2>
+            </div>
+
+            <form id="serviceForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="serviceName">Nome do serviço</label>
+                        <input id="serviceName" type="text" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="duration">Duração</label>
+                        <select id="duration" required>
+                            <option value="">Selecione</option>
+                            <option>30 minutos</option>
+                            <option>45 minutos</option>
+                            <option>60 minutos</option>
+                            <option>90 minutos</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price">Valor</label>
+                        <input id="price" type="number" step="0.01" required>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-gold">Cadastrar serviço</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</div>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

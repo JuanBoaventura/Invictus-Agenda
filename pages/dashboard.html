@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Invictus Agenda</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="app-layout">
+    <aside class="sidebar">
+        <a href="dashboard.html" class="brand sidebar-brand">
+            <span class="brand-symbol">I</span>
+            <span>INVICTUS <strong>AGENDA</strong></span>
+        </a>
+
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="active">▦ Dashboard</a>
+            <a href="appointments.html">◷ Agendamentos</a>
+            <a href="clients.html">♙ Clientes</a>
+            <a href="services.html">◇ Serviços</a>
+            <a href="settings.html">⚙ Configurações</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <nav class="sidebar-nav">
+                <a href="login.html">↪ Sair</a>
+            </nav>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div class="page-title">
+                <h1>Dashboard</h1>
+                <p>Bem-vindo ao painel do Invictus Agenda.</p>
+            </div>
+
+            <div class="user-badge">
+                <span>Administrador</span>
+                <span class="avatar">A</span>
+            </div>
+        </header>
+
+        <section class="stats-grid">
+            <article class="stat-card">
+                <span>Agendamentos hoje</span>
+                <strong>24</strong>
+            </article>
+
+            <article class="stat-card">
+                <span>Clientes cadastrados</span>
+                <strong>148</strong>
+            </article>
+
+            <article class="stat-card">
+                <span>Serviços ativos</span>
+                <strong>12</strong>
+            </article>
+
+            <article class="stat-card">
+                <span>Faturamento estimado</span>
+                <strong>R$ 3.240</strong>
+            </article>
+        </section>
+
+        <section class="content-grid">
+            <div class="panel">
+                <div class="panel-header">
+                    <h2>Próximos agendamentos</h2>
+                    <span>Hoje</span>
+                </div>
+
+                <div class="appointment-item">
+                    <div>
+                        <strong>Mariana Oliveira</strong>
+                        <small>09:00 · Corte feminino</small>
+                    </div>
+                    <span class="status">Confirmado</span>
+                </div>
+
+                <div class="appointment-item">
+                    <div>
+                        <strong>Rafael Santos</strong>
+                        <small>10:30 · Corte masculino</small>
+                    </div>
+                    <span class="status">Confirmado</span>
+                </div>
+
+                <div class="appointment-item">
+                    <div>
+                        <strong>Beatriz Lima</strong>
+                        <small>13:00 · Manicure</small>
+                    </div>
+                    <span class="status">Confirmado</span>
+                </div>
+
+                <div class="appointment-item">
+                    <div>
+                        <strong>Lucas Almeida</strong>
+                        <small>15:30 · Barba</small>
+                    </div>
+                    <span class="status">Confirmado</span>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header">
+                    <h2>Resumo da semana</h2>
+                    <span>Visualização</span>
+                </div>
+
+                <div class="preview-chart">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="empty-state">
+                    Crescimento de 18% em relação à semana anterior.
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
